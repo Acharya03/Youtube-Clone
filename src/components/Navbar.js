@@ -9,14 +9,14 @@ import { BsBell } from "react-icons/bs";
 
 export default function Navbar() {
   return (
-    <div className='flex justify-between px-14 h-14 items-center bg-[#212121] opacity-95  text-white'>
+    <div className='flex justify-between px-14 h-14 items-center bg-[#212121] opacity-95'>
         <div className='flex gap-8 items-center text-2x1'>
             <div>
-                <GiHamburgerMenu/>
+                <GiHamburgerMenu className='text-2xl'/>
             </div>
             <div className='flex gap-2 items-center justify-center'>
-                <BsYoutube className='text3x1 text-red-600'/>
-                <span className='font-bold text-2xl'>Youtube </span>
+                <BsYoutube className='text-3xl text-red-600'/>
+                <span className=' text-2xl'>YouTube</span>
             </div>
         </div>
             <div className='flex items-center justify-center gap-5'>
