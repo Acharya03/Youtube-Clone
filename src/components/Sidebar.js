@@ -33,33 +33,34 @@ export default function Sidebar() {
     ]
   return (
     <div className='w-2/12 bg-[#212121] pr-5 overflow-auto pb-8 h-screen'>
-        <ul className='flex flex-col border-b-2'>
+        <ul className='flex flex-col border-b-2 border-gray-700'>
             {mainLinks.map(
                 ({icon,name}) => {
                     return(
                         <li key={name} className={`pl-6 py-2 hover:bg-zinc-500 ${name === "Home" ? "bg-slate-600" : " "}`}>
-                             <a href='#' className='flex items-center gap-5'>
+                            <a href='#' className='flex items-center gap-5'>
                                 {icon}
-                             </a>
-                             <span className='text-sm tracking-wider'>
+                                <span className='text-sm tracking-wider'>
                                   {name}
-                            </span>
+                                </span>
+                            </a>
+                             
                         </li>
                     )
                 }
             )}
         </ul>
-        <ul className='flex flex-col border-b-2'>
+        <ul className='flex flex-col border-b-2 border-gray-700'>
             {otherLinks.map(
                 ({icon,name}) => {
                     return(
                         <li key={name} className={`pl-6 py-2 hover:bg-zinc-500 ${name === "Home" ? "bg-slate-600" : " "}`}>
-                             <a href='#' className='flex items-center'>
+                            <a href='#' className='flex items-center gap-5'>
                                 {icon}
-                             </a>
-                             <span>
+                                <span className='text-sm tracking-wider'>
                                   {name}
-                            </span>
+                                </span>
+                            </a>
                         </li>
                     )
                 }
