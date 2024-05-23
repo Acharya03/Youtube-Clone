@@ -9,7 +9,7 @@ import { BsBell } from "react-icons/bs";
 
 export default function Navbar() {
   return (
-    <div className='flex justify-between px-14 h-14 items-center bg-[#212121] opacity-95'>
+    <div className='flex justify-between px-14 h-14 items-center bg-[#181818] opacity-95'>
         <div className='flex gap-8 items-center text-2x1'>
             <div>
                 <GiHamburgerMenu className='text-2xl'/>
@@ -21,10 +21,10 @@ export default function Navbar() {
         </div>
             <div className='flex items-center justify-center gap-5'>
               <form>
-                <div className='flex bg-zinc-900 items-center h-10 px-4 pr-0 rounded-3xl'>
+                <div className='flex bg-zinc-600 items-center h-10 px-4 pr-0 rounded-3xl'>
                   <div className='flex gap-5 items-center pr-5'>
                     <input type='text' placeholder='search' 
-                    className='w-96 bg-zinc-900 focus: outline-none border-none'/>
+                    className='w-96 bg-zinc-600 focus: outline-none border-none'/>
                   </div>
                   <button className='h-10 w-16 flex items-center justify-center
                    bg-zinc-800 rounded-r-3xl'>
@@ -32,7 +32,7 @@ export default function Navbar() {
                   </button>
                 </div>
               </form>
-              <div className='text-x1 p-3 bg-zinc-900 rounded-full'>
+              <div className='text-x1 p-3 bg-zinc-800 rounded-full'>
                 <FaMicrophone />
               </div>
             </div>
