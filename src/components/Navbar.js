@@ -28,7 +28,7 @@ export default function Navbar() {
                   </div>
                   <button className='h-10 w-16 flex items-center justify-center
                    bg-zinc-800 rounded-r-3xl'>
-                    <AiOutlineSearch className='f'/>
+                    <AiOutlineSearch className='text-xl'/>
                   </button>
                 </div>
               </form>
