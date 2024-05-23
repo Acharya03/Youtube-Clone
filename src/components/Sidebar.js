@@ -9,35 +9,35 @@ import { MdOutlineWatchLater } from "react-icons/md";
 export default function Sidebar() {
     const mainLinks = [
         {
-            icon: <GrHomeRounded />,
+            icon: <GrHomeRounded className='text-xl'/>,
             name: 'Home'
         },
         {
-            icon: <SiYoutubeshorts />,
+            icon: <SiYoutubeshorts className='text-xl'/>,
             name: 'Shorts'
         },
         {
-            icon: <MdOutlineSubscriptions />,
+            icon: <MdOutlineSubscriptions className='text-xl'/>,
             name: 'Subscriptions'
         }
     ]
     const otherLinks = [
         {
-            icon: <GoHistory />,
+            icon: <GoHistory className='text-xl'/>,
             name: 'History'
         },
         {
-            icon: <MdOutlineWatchLater />,
+            icon: <MdOutlineWatchLater className='text-xl'/>,
             name: 'Watch later'
         }
     ]
   return (
-    <div className='w-2/12 bg-[#212121] pr-5 overflow-auto pb-8 h-screen'>
+    <div className='w-2/12 bg-[#212121] p-2 pr-5 overflow-auto pb-8 h-screen'>
         <ul className='flex flex-col border-b-2 border-gray-700'>
             {mainLinks.map(
                 ({icon,name}) => {
                     return(
-                        <li key={name} className={`pl-6 py-2 hover:bg-zinc-500 ${name === "Home" ? "bg-slate-600" : " "}`}>
+                        <li key={name} className={`pl-6 py-2 hover:bg-zinc-700 ${name === "Home" ? "bg-zinc-700" : " "} rounded-xl`}>
                             <a href='#' className='flex items-center gap-5'>
                                 {icon}
                                 <span className='text-sm tracking-wider'>
@@ -54,7 +54,7 @@ export default function Sidebar() {
             {otherLinks.map(
                 ({icon,name}) => {
                     return(
-                        <li key={name} className={`pl-6 py-2 hover:bg-zinc-500 ${name === "Home" ? "bg-slate-600" : " "}`}>
+                        <li key={name} className={`pl-6 py-2 hover:bg-zinc-700 ${name === "Home" ? "bg-zinc-700" : " "} rounded-xl`}>
                             <a href='#' className='flex items-center gap-5'>
                                 {icon}
                                 <span className='text-sm tracking-wider'>
