@@ -32,9 +32,5 @@ export const parseVideoDuration = (duration) => {
         :durationParts[0]
     }`;
     }
-    return (
-    
-<>
-</>
-    )
+    return ""
 }

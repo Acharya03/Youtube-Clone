@@ -1,8 +1,12 @@
 import axios from 'axios';
-import React from 'react'
+import React from 'react';
+import { parseVideoDuration } from './parseVideoDuration';
+import { convertRawtoString } from './convertRawtoString';
+
+
 const API_KEY = process.env.REACT_APP_YOUTUBE_DATA_API_KEY;
 
-import { parseVideoDuration } from './parseVideoDuration'
+
 export const parseData = async(items) => {
 
 try{
@@ -56,7 +60,7 @@ try{
                 videoViews:convertRawtoString(
                     videosData[index].statistics.viewCount
                 ),
-                videoAge:timeSince(new Data(item.snippet.publishedAt)
+                videoAge:timeSince(new Date(item.snippet.publishedAt)
                 ),
                 channelInfo:{
                     id:item.snippet.channelId,
