@@ -33,7 +33,7 @@ export default function Home() {
           loader={<Spinner/>}
           height={650}
           >
-              <div className='grid gap-y-14 gap-x-8 grid-cols-4 p-8'>
+              <div className='grid gap-y-14 gap-x-8 p-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
                 {videos.map((item) => {
                   return <Card data={item} key={item.videoId}/>
                 })}
